@@ -16,13 +16,13 @@ Note: this challenge can also be solved without the readfile feature, as demonst
 readfile is a neat PHP function that: “Reads a file and writes it to the output buffer.”
 Contrary to include, it also supports reading URL streams like http:// resources and directly writes them to the output buffer.
 
-Attack plan:
+#Attack plan
 
-    Use readfile to read a big and slow HTTP resource (and keep the connection open)
-    Use Nginx’s fastcgi_buffering to create a tempfile
-    Include the freshly created tempfile
-    Usual racing and stuff
-    …
+Use readfile to read a big and slow HTTP resource (and keep the connection open)
+Use Nginx’s fastcgi_buffering to create a tempfile
+Include the freshly created tempfile
+Usual racing and stuff
+    
 Profit
 
 Annoyances:
@@ -55,14 +55,12 @@ readfile は PHP の関数で、次のような機能を持っています。「
 
 攻撃計画
 
-    readfileを使って、大きくて遅いHTTPリソースを読み込む（そして接続を開いたままにする）。
-    Nginxのfastcgi_bufferingを使用してtempfileを作成する。
-    作成されたばかりのtempfileをインクルードする
-    通常のレースとその他
-    ...
-儲かる
+readfileを使って、大きくて遅いHTTPリソースを読み込む（そして接続を開いたままにする）。
+Nginxのfastcgi_bufferingを使用してtempfileを作成する。
+作成されたばかりのtempfileをインクルードする
+通常の競合とその他
+    
 
-迷惑な話。
 
 readfileとfastcgi_bufferingは、クライアントがHTTP/1.0で接続しているときだけファイルを作成するようです（exploitのcurl部分を参照してください）。
 それ以外の場合は、チャンク転送が使える。
