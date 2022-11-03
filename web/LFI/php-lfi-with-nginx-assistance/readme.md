@@ -1,5 +1,9 @@
 # Nginx + PHP-FPM environment
 
+from hxp CTF 2021
+
+![image](https://user-images.githubusercontent.com/75846902/199670076-7df4a2bd-17c5-4987-a036-e044502bac6a.png)
+
 LFI(LocalFileIncludion) + RCE(RemoteCodeExecution)
 
 get cpus and pid_max
