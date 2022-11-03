@@ -17,3 +17,10 @@ The file descriptors are listed in /procfs.
 Note that PHP does not allow direct inclusion of /proc/[PID]/fd/[FD], 
 so /proc/self/fd/[PID]/... /... /... /[PID]/fd/[FD] is also used as a reference technique via /[PID]/fd/[FD].
 
+deploy in local via docker
+
+```
+# Running locally:
+docker build -t php-lfi-with-nginx-assistance .
+docker run -p 1337:80 --rm -it php-lfi-with-nginx-assistance
+```
