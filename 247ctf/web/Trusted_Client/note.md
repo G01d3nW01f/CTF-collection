@@ -20,6 +20,7 @@ maybe this is obfuscated of javascript as BrainF**k
 
 I googled "JSfuck"
 
-![image](https://user-images.githubusercontent.com/75846902/203566580-418c55c3-b60b-42e3-a154-e95843718d79.png)
+![image](https://user-images.githubusercontent.com/75846902/203566768-8f8c8945-432e-4efd-8710-d16e55358036.png)
+
 
 got the Flag!!!!!!!
