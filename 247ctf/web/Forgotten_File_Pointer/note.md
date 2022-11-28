@@ -49,7 +49,21 @@ for i in range(0,11):
         
 ```
 
-
+```
+->$ ./exploit.py https://cbc716c067bfcb4d.247ctf.com
+count: 0
+count: 1
+count: 2
+count: 3
+count: 4
+count: 5
+count: 6
+count: 7
+count: 8
+count: 9
+count: 10
+247CTF{XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX}
+```
 
 
 
