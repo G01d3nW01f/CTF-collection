@@ -1,6 +1,6 @@
 exploit race condition
 
-2 type request (many) send in multi thread,
+2 type requests send in bulk at the sametime,
 it's will make occure the race condition
 
 I used super useful and strong tool,,
