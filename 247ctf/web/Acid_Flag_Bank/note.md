@@ -1,7 +1,7 @@
 exploit race condition
 
-2 type request send in multi process
-occure the race condition
+2 type request send in multi thread,
+it's will make occure the race condition
 
 use the tool for race condition
 
