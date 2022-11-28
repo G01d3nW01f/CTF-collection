@@ -14,11 +14,12 @@ php subroutine process directory:
 /dev/fd
 
 so brute force attack is available maybe
-
+```
 /?include=/dev/fd/1
 /?include=/dev/fd/2
 /?include=/dev/fd/3
 ..........
+```
 
 create exploit:
 
