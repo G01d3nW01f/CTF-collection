@@ -14,8 +14,8 @@ this tool is are so nice and fast
 ```
 this tool requre the config.toml in argument:
 
-request type1: ?to=1&from=2&amount=50.
-request type2: ?to=2&from=1&amount=50.
+    request type1: ?to=1&from=2&amount=50.
+    request type2: ?to=2&from=1&amount=50.
 
 config.toml
 ```
